@@ -1,0 +1,10 @@
+n=int (input())
+s=n*2-2 #3*2-2=4
+for i in range (0,n):
+    for j in range(0,s):
+        print(end=" ")
+        #print(s)
+    s=s-2 #4-2 = 2 
+    for j in range(0, i+1):
+        print('* ',end="")
+    print('/r')
