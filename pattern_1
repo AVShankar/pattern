@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main()
+{
+    int num, row, col, temp, temp1;
+    scanf("%d", &num);
+    temp = num;
+    temp1= num-1;
+    for(row=1; row<=num; row++)
+    {
+        for(col=0; col<temp; col++)
+        {
+            printf(" ");
+            --temp;
+        } temp = num;
+        for(col=1; col<=row; col++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(row=temp1; row>=1; row--)
+    {
+        for(col=num-1; col>1; col--)
+        {
+            printf(" ");
+        }
+        for(col=temp1; col>=1; col--)
+        {
+            printf("*");
+        }
+        temp1--;
+        printf("\n");
+    }
+    return 0;
+}
